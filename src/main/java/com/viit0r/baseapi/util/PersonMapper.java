@@ -15,7 +15,7 @@ public class PersonMapper {
     }
 
     public List<PersonResponseDTO> toPeopleDTO(List<Person> people) {
-        return people.stream().map(person -> new PersonResponseDTO()).collect(Collectors.toList());
+        return people.stream().map(PersonResponseDTO::new).collect(Collectors.toList());
     }
 
     public Person toPerson(PersonRequestDTO personDTO) {
