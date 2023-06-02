@@ -1,14 +1,18 @@
 package com.viit0r.baseapi.model.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.*;
 
+@Entity
+@Table(name = "people")
+@NoArgsConstructor
+@Getter
+@Setter
 public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Setter(AccessLevel.NONE)
     private Long id;
 
     @Column
@@ -19,4 +23,11 @@ public class Person {
 
     @Column
     private String city;
+
+    @Builder
+    public Person(String name, Integer age, String city) {
+        this.name = name;
+        this.age = age;
+        this.city = city;
+    }
 }
