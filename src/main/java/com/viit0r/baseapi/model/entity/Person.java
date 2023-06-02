@@ -1,4 +1,4 @@
-package com.viit0r.baseapi.model;
+package com.viit0r.baseapi.model.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
