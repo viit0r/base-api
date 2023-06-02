@@ -15,7 +15,7 @@ public interface PersonService {
 
     PersonResponseDTO create(PersonRequestDTO personDTO);
 
-    PersonResponseDTO update(PersonRequestDTO personDTO, Long id);
+    PersonResponseDTO update(PersonRequestDTO personDTO);
 
     String delete(Long id);
 }
