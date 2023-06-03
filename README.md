@@ -1,2 +1,2 @@
-# base-api
-API que utilizo de base em todos os meus projetos
+# Base API
+API com um CRUD básico em Spring que utilizo de base para meus outros projetos Spring
